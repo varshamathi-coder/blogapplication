@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Blog - BlogSpace</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Blog<span>Space</span>
+            </div>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="form-page">
+
+        <div class="blog-form">
+
+            <h2>Create New Blog ✍️</h2>
+
+            <p>
+                Share your thoughts with the world.
+            </p>
+
+
+            <form onsubmit="createBlog(event)">
+
+                <label>Blog Title</label>
+
+                <input
+                    type="text"
+                    id="blogTitle"
+                    placeholder="Enter blog title"
+                    required
+                >
+
+
+                <label>Category</label>
+
+                <select id="category">
+
+                    <option value="">
+                        Select Category
+                    </option>
+
+                    <option>
+                        Technology
+                    </option>
+
+                    <option>
+                        Education
+                    </option>
+
+                    <option>
+                        Lifestyle
+                    </option>
+
+                    <option>
+                        Travel
+                    </option>
+
+                </select>
+
+
+                <label>Blog Content</label>
+
+                <textarea
+                    id="blogContent"
+                    rows="10"
+                    placeholder="Write your blog here..."
+                    required>
+                </textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn">
+                    Publish Blog
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
